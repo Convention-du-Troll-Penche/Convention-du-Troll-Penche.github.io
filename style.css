@@ -274,3 +274,9 @@ Generic layout (demo looks)
     white-space: nowrap; 
     width: 1px;
 }/**/
+
+.responsive {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
