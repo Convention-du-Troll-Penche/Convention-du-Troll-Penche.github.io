@@ -3,11 +3,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: url('espace2.png') no-repeat center center;
-    background-size: cover; /* S'adapte pour couvrir tout l'espace du body */
-    color: white;
+    background: rgb(203, 255, 185);
+    color: rgb(203, 255, 185);
     padding: 2rem 0;
-    /*background-color: #071075;*/
     color: #333;
 }
 
@@ -29,6 +27,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    color: rgb(17, 17, 17);
 }
 
 .title span{
@@ -45,6 +44,7 @@ header {
 
 .logo.left {
     left: 20px; /* Ajustez pour positionner à gauche */
+    transform: scaleX(-1);
 }
 
 .logo.right {
