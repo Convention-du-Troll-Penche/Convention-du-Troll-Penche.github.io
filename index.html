@@ -5,73 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="La Convention du Troll Penché : Festival de jeu de société et jeux de rôle">
     <title>Convention du Troll Penché</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/styles/style.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="troll_vectoriel.svg">
+    <link rel="icon" type="image/svg+xml" href="resources/images/troll_vectoriel.svg">
     <!-- Fallback for older browsers -->
-    <link rel="icon" type="image/png" href="troll_vectoriel.svg">
+    <link rel="icon" type="image/png" href="resources/images/troll_vectoriel.svg">
 </head>
-<body>
-    <header>
-        <img src="Troll-vide.png" alt="Logo de la Convention du Troll Penché" class="logo left">
-        <img src="Troll-vide.png" alt="Logo de la Convention du Troll Penché" class="logo right">
-        <div class="title"><span>🎲</span><h1>La Convention du Troll Penché</h1><span>👾</span></div>
-        <nav>
-            <a href="index.html">À propos</a>
-            <a href="sur_place.html">Sur place</a>
-            <a href="partenaires.html">Partenaires</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
+
+<body>
+<header>
+    <div class="horizontal">
+        <div class="title">
+            <a href="index.html">
+                <img class="logo" src="resources/images/troll_vectoriel.svg" alt="logo de la convention">
+                <h1>Convention du Troll Penché</h1>
+            </a>
+        </div>
+        <button class="nav-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">À propos</a></li>
+            <li><a href="sur_place.html">Sur place</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
     <main>
-        <section id="convention" class="text-block">
+        <section>
             <h2>La convention revient !!!</h2>
             <p>
-                La convention du Troll Penché est une des grandes activitées de l'association étudiantes de l'UTBM. 
+                La convention du Troll Penché est une des grandes activitées de l'association étudiantes de l'UTBM.
                 Il s'agit d'un rassemblement ouvert au grand publique dans le but de permettre a nos visiteurs de venir
-                 passer un moment en famille ou entre amis dans le but de jouer à des jeux de société prêtés par le club 
-                 du Troll Penché ou de jouer à des jeux de rôles organisés par nos partenaires ou par vous même si cela vous plait. 
+                passer un moment en famille ou entre amis dans le but de jouer à des jeux de société prêtés par le club
+                du Troll Penché ou de jouer à des jeux de rôles organisés par nos partenaires ou par vous même si cela vous
+                plait.
             </p>
             <p>
-                Pour cette 31e édition, la convention se tiendra a 
-                <a href="https://www.google.fr/maps/place/La+Filature+d'Audincourt/@47.4795254,6.8376806,377m/data=!3m1!1e3!4m6!3m5!1s0x47921107793ae595:0xf31a9ed6384f9b30!8m2!3d47.4794837!4d6.8374553!16s%2Fg%2F11gskwn4bj?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">la Filature</a> 
-                d'Audincourt, le week-end du 28 février et 1er mars 2026. L'accueil du public se fera de 9h à 22h le samedi 28 et de 8h à 18h le dimanche 1er mars.
-                 Mais même si il ne sera plus possible d'arriver entre 23h et 8h, il sera possible de rester durant ces horaires si vous êtes arrivés 
-                 plus tôt dans la soirée afin de continuer à profiter des jeux de société ou de profiter du calme pour passer des session de jeu de rôle encore plus mémorables.
+                Pour cette 31e édition, la convention se tiendra a
+                <a href="https://www.google.fr/maps/place/La+Filature+d'Audincourt/@47.4795254,6.8376806,377m/data=!3m1!1e3!4m6!3m5!1s0x47921107793ae595:0xf31a9ed6384f9b30!8m2!3d47.4794837!4d6.8374553!16s%2Fg%2F11gskwn4bj?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                   target="_blank" rel="noopener noreferrer">la Filature</a>
+                d'Audincourt, le week-end du 28 février et 1er mars 2026. L'accueil du public se fera de 9h à 22h le samedi
+                28 et de 8h à 18h le dimanche 1er mars.
+                Mais même si il ne sera plus possible d'arriver entre 23h et 8h, il sera possible de rester durant ces
+                horaires si vous êtes arrivés
+                plus tôt dans la soirée afin de continuer à profiter des jeux de société ou de profiter du calme pour passer
+                des session de jeu de rôle encore plus mémorables.
             </p>
             <p>
 
-                Chaque édition possède un thème qui sera représenté par des décorations, par des goodies et par vos costumes si vous voulez venir déguisés. Après la 30e convention qui avait pour thème l'espace, la 31e convention du Troll Penché aura pour thème......... : Sous l'eau 😉<strong></strong>
+                Chaque édition possède un thème qui sera représenté par des décorations, par des goodies et par vos costumes
+                si vous voulez venir déguisés. Après la 30e convention qui avait pour thème l'espace, la 31e convention du
+                Troll Penché aura pour thème......... : Sous l'eau<strong></strong>
             </p>
-                <br>
+            <br>
             <p>
                 On vous attend nombreux pour cette édition spéciale !!!
             </p>
         </section>
 
-        <section id="troll" class="text-block">
+        <section>
             <h2>Le Troll Penché</h2>
-            <p>Le Troll Penché est le plus vieux club de l'association étudiante de l'UTBM encore actif, et pour cause, il à été crée avant l'UTBM, 
-                à l'époque ou il s'agissait de l'ENIBe. La passion des jeux de société à permis à ce club de traverser les années tout en conservant les différents 
-                jeux ce qui permet au Troll Penché d'avoir en sa possession des jeux que l'on ne trouve plus sur le marché.</p>
-                <p>Aujourd'hui, le Troll Penché compte environ une vingtaine de membres actifs sur les différents rendez-vous hebdomadaires que l'on à, et plus encore 
-                    sur nos rendez-vous semestriels pour décompresser après les examens. </p>
-                    <p>Les différents rendez-vous que l'on a sont le lundi soir sur discord avec le site <a href="https://fr.boardgamearena.com/">Board Game Arena</a>, 
-                        le jeudi après midi sur le lieu de vie de Sevenans et le vendredi soir sur 
-                    Belfort dans une salle dédiée qui est elle plus facile d'accès aux cotisants exterieurs à l'UTBM.</p>
-                <p>Aussi, le troll penché compte dans ses armoires plus de 300 jeux de plateau et un peu plus de 15O livres de jeu de rôle, ce qui nous permet de diversifier nos 
-                    rendez-vous hebdomadaires.</p>
+            <p>Le Troll Penché est le plus vieux club de l'association étudiante de l'UTBM encore actif, et pour cause, il à
+                été crée avant l'UTBM,
+                à l'époque ou il s'agissait de l'ENIBe. La passion des jeux de société à permis à ce club de traverser les
+                années tout en conservant les différents
+                jeux ce qui permet au Troll Penché d'avoir en sa possession des jeux que l'on ne trouve plus sur le
+                marché.</p>
+            <p>Aujourd'hui, le Troll Penché compte environ une vingtaine de membres actifs sur les différents rendez-vous
+                hebdomadaires que l'on à, et plus encore
+                sur nos rendez-vous semestriels pour décompresser après les examens. </p>
+            <p>Les différents rendez-vous que l'on a sont le lundi soir sur discord avec le site <a
+                    href="https://fr.boardgamearena.com/">Board Game Arena</a>,
+                le jeudi après midi sur le lieu de vie de Sevenans et le vendredi soir sur
+                Belfort dans une salle dédiée qui est elle plus facile d'accès aux cotisants exterieurs à l'UTBM.</p>
+            <p>Aussi, le troll penché compte dans ses armoires plus de 300 jeux de plateau et un peu plus de 15O livres de
+                jeu de rôle, ce qui nous permet de diversifier nos
+                rendez-vous hebdomadaires.</p>
         </section>
 
-        <section id="contact" class="text-block">
+        <section id="contact">
             <h2>Contact</h2>
             <p>Pour toute question, contactez-nous :</p>
             <ul>
                 <li>Email : <a href="mailto:convention.troll.penche@gmail.com">convention.troll.penche@gmail.com</a></li>
-                <li>Suivez-nous sur les réseaux sociaux : <a href="https://www.facebook.com/convTroll">Facebook</a>, <a href="https://www.instagram.com/conventiontrollpenche?igsh=MW4zeDU2bnNwZG1mcg==">Instagram</a></li>
+                <li>Suivez-nous sur les réseaux sociaux : <a href="https://www.facebook.com/convTroll">Facebook</a>, <a
+                        href="https://www.instagram.com/conventiontrollpenche?igsh=MW4zeDU2bnNwZG1mcg==">Instagram</a></li>
             </ul>
         </section>
     </main>
+</div>
+
+
+<footer>
+    <p>Associations des Étudiants de l'UTBM</p>
+</footer>
+
+<script src="./script.js"></script>
 </body>
 </html>

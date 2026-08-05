@@ -1,0 +1,113 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    background: rgb(37 71 91); /*A changer en fonction du thème.*/
+    color: white;
+}
+
+.title a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    top: 10px; /* Ajustez pour positionner en haut */
+    height: 100px; /* Fixe la hauteur pour éviter la déformation */
+    width: auto; /* Préserve les proportions */
+}
+
+nav {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: block;
+
+        a {
+            display: block;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    }
+
+    li:hover {
+        border-radius: 25px;
+
+        a {
+            color: #e3ac5c;
+        }
+    }
+}
+
+.active {
+    color: #f5a22c;
+}
+
+.nav-btn {
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+        width: 100%;
+        height: 3px;
+        background: azure;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .title {
+        font-size: 0.7em;
+    }
+
+    .nav-btn {
+        display: flex;
+    }
+
+    .logo {
+        top: 5px; /* Ajustez pour positionner en haut */
+        height: 80px; /* Fixe la hauteur pour éviter la déformation */
+        width: auto; /* Préserve les proportions */
+    }
+
+    nav {
+        display: none;
+        background-color: rgb(49 97 126); /*A changer en fonction du thème.*/
+    }
+
+    header .horizontal {
+        padding-right: 2em;
+    }
+}
