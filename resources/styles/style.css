@@ -1,97 +1,43 @@
+/* IMPORTS DES DIFFÉRENTS ÉLÉMENTS */
+@import "header.css";
+@import "footer.css";
+@import "tile.css";
+
+/* STYLES BASIQUES */
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* BALISES STANDARDS */
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    background-color: #f6f6f6;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: rgb(203, 255, 185);
-    color: rgb(203, 255, 185);
-    padding: 2rem 0;
+    min-height: 100vh;
     color: #333;
 }
 
-
-/* Header global */
-header {
-    display: flex;
-    flex-direction: column; /* Navigation et titre empilés */
-    align-items: center; /* Centre tout sauf le logo */
-    /* background: url('espace.png') no-repeat center center; */
-    background-size: cover;
-    color: white;
-    padding: 1rem;
-    position: relative; /* Pour permettre le positionnement absolu du logo */
-}
-
-.title{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    color: rgb(17, 17, 17);
-}
-
-.title span{
-    font-size: 200%;
-}
-/* Logo à gauche */
-.logo {
-    position: absolute;
-    top: 10px; /* Ajustez pour positionner en haut */
-    height: 160px; /* Fixe la hauteur pour éviter la déformation */
-    width: auto; /* Préserve les proportions */
-    z-index: -1;
-}
-
-.logo.left {
-    left: 20px; /* Ajustez pour positionner à gauche */
-    transform: scaleX(-1);
-}
-
-.logo.right {
-    right: 20px;
-}
-
-/* Titre centré */
-header h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-/* Navigation centré */
-nav {
-    opacity: 75%;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1rem; /* Espacement entre les liens */
-    justify-content: center; /* Centre les liens */
-    margin-top: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 8px 12px;
-}
-
-@media (max-width: 550px) {
-    nav {
-        width: 90%;
-        flex-direction: column;
-    }
-    nav a {
-        text-align: center;
-    }
-}
-
-
-nav a {
-    color: rgb(47, 47, 47);
-    text-decoration: none;
-    font-size: 150%;
-}
-
 main {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 1em;
+    width: 85%;
+    height: 100%;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .text-block {
@@ -123,21 +69,6 @@ th, td {
 
 th {
     background-color: #f4f4f4;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: white;
-}
-
-footer p {
-    margin: 0;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 article {
@@ -277,3 +208,14 @@ Generic layout (demo looks)
     max-width: 800px;
     height: auto;
   }
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 100%;
+    }
+
+    .container {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+}
